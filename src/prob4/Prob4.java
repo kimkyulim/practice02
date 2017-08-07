@@ -1,4 +1,7 @@
 package prob4;
+
+import java.lang.reflect.Array;
+
 public class Prob4 {
 
 	public static void main(String[] args) {
@@ -10,13 +13,20 @@ public class Prob4 {
 	}
 	
 	public static char[] reverse(String str) {
-		/* 코드를 완성합니다 */
+		char[] ar = new char[str.length()]; 
+		for(int i=0; i<str.length(); i++) {
+			ar[i] =str.charAt((str.length()-1) - i );
+		}
 
-			
-		return null;
+		return ar;
 	}
 
 	public static void printCharArray(char[] array){
+		
 		/* 코드를 완성합니다 */
+		for(int i=0; i<array.length; i++) {
+			System.out.print(array[i]);
+		}
+		System.out.println();
 	}
 }
